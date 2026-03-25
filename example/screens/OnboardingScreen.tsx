@@ -10,8 +10,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useOwsWallet } from "../../src/hooks/useOwsWallet";
-import type { OWSWallet } from "../../src/types";
+import { useOwsWallet } from "ows-react-native";
+import type { OWSWallet } from "ows-react-native";
 import { C, S } from "../theme";
 
 export function OnboardingScreen() {

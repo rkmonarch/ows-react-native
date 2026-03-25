@@ -12,8 +12,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useOwsWallet } from "../../src/hooks/useOwsWallet";
-import { usePolicy } from "../../src/hooks/usePolicy";
+import { useOwsWallet } from "ows-react-native";
+import { usePolicy } from "ows-react-native";
 import { C, S } from "../theme";
 
 export function DashboardScreen() {
