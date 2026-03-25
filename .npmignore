@@ -1,0 +1,15 @@
+# Never publish these
+.ows/
+backend/node_modules/
+example/
+example/node_modules/
+.git/
+.github/
+*.log
+
+# Keep in npm package:
+# src/       ← source
+# lib/       ← built output
+# README.md
+# package.json
+# DEMO.md

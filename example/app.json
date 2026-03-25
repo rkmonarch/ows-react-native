@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "AgentPayMobile",
+    "slug": "agent-pay-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A1A",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ows.agentpaymobile",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Approve payments over $0.50 with Face ID"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A1A"
+      },
+      "package": "com.ows.agentpaymobile",
+      "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT"]
+    },
+    "plugins": [
+      "expo-local-authentication",
+      "expo-secure-store"
+    ],
+    "scheme": "agentpay"
+  }
+}
