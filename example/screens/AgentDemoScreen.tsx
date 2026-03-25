@@ -8,10 +8,8 @@ import React, { useState } from 'react';
 import { ActivityIndicator, Alert, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { usePayWithOws } from '../../src/hooks/usePayWithOws';
-import { useOwsWallet } from '../../src/hooks/useOwsWallet';
-import { parseMppChallenge } from '../../src/utils/mppParser';
-import type { MppChallenge, PaymentResult } from '../../src/types';
+import { usePayWithOws, useOwsWallet, parseMppChallenge } from 'ows-react-native';
+import type { MppChallenge, PaymentResult } from 'ows-react-native';
 import { C, S } from '../theme';
 
 const BACKEND_URL = 'http://localhost:3001';

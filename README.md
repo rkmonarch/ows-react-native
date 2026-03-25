@@ -2,10 +2,13 @@
 
 > The first React Native library for the **Open Wallet Standard (OWS)** — policy-gated autonomous payments on Solana using USDC, with Stripe MPP / x402 HTTP 402 support.
 
-[![npm version](https://img.shields.io/npm/v/ows-react-native.svg)](https://www.npmjs.com/package/ows-react-native)
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](./LICENSE)
-[![Built for Solana](https://img.shields.io/badge/Built%20for-Solana-9945FF)](https://solana.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org)
+[![npm version](https://img.shields.io/npm/v/ows-react-native.svg?style=flat-square&color=6C47FF)](https://www.npmjs.com/package/ows-react-native)
+[![npm downloads](https://img.shields.io/npm/dm/ows-react-native.svg?style=flat-square)](https://www.npmjs.com/package/ows-react-native)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=flat-square)](./LICENSE)
+[![Built for Solana](https://img.shields.io/badge/Built%20for-Solana-9945FF?style=flat-square)](https://solana.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square)](https://www.typescriptlang.org)
+
+**📦 [npmjs.com/package/ows-react-native](https://www.npmjs.com/package/ows-react-native)**
 
 ---
 
@@ -80,25 +83,28 @@ Key problems this solves:
 ## Installation
 
 ```bash
-# Library
 npm install ows-react-native
+```
 
-# Peer dependencies (if using Expo)
+```bash
+# If using Expo, also install native dependencies:
 npx expo install expo-local-authentication expo-secure-store
 ```
 
 ### Backend setup
 
-The backend is a standalone Express server included in the package. Run it alongside your app:
+The OWS backend is a standalone Express server that manages your wallet vault, enforces policies, and signs Solana transactions. Private keys **never** leave it.
 
 ```bash
-# From your project root
-npx ows-backend
-# or clone the repo and run:
-cd node_modules/ows-react-native/backend && npm install && npm run dev
+# Clone the repo and start the backend
+git clone https://github.com/rkmonarch/ows-react-native
+cd ows-react-native/backend
+npm install
+npm run dev
+# → Listening on http://localhost:3001
 ```
 
-> The backend starts on `http://localhost:3001` by default. Set `PORT` env var to change.
+> Set `PORT` and `SOLANA_NETWORK` env vars to configure. Defaults to port `3001` on `devnet`.
 
 ---
 

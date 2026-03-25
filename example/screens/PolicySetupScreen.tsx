@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ActivityIndicator, Alert, ScrollView, StyleSheet, Switch, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { usePolicy } from '../../src/hooks/usePolicy';
+import { usePolicy } from 'ows-react-native';
 import { C, S } from '../theme';
 
 export function PolicySetupScreen() {

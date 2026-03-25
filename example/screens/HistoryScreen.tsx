@@ -2,8 +2,8 @@ import React from 'react';
 import { Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { useOws } from '../../src/components/OwsProvider';
-import type { Transaction } from '../../src/types';
+import { useOws } from 'ows-react-native';
+import type { Transaction } from 'ows-react-native';
 import { C, S } from '../theme';
 
 export function HistoryScreen() {
